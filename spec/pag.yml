@@ -16,4 +16,6 @@ license: "MPL-2.0"
 contents:
 - src: ./opt/zapier/pag/prom-aggregation-gateway
   dst: /opt/zapier/pag/prom-aggregation-gateway
+- src: ./etc/systemd/system/pag.service
+  dst: /etc/systemd/system/pag.service
 depends:

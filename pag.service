@@ -1,0 +1,13 @@
+[Unit]
+Description=Prometheus Aggregation Gateway
+After=network-online.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=30
+
+ExecStart=/opt/zapier/pag/prom-aggregation-gateway --apiListen localhost:9091
+
+[Install]
+WantedBy=multi-user.target
